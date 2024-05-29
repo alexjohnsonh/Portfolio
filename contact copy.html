@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="./Design/logoContact.png">
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="contact.js"></script>
+</head>
+<body>
+    <div class="topnav">
+
+        <!-- Centered link -->
+        <div class="topnav-centered">
+            <a href="./contact.html" class="active"><b>CONTACT</b></a>
+        </div>
+        
+        <!-- Left-aligned links (default) -->
+        <a href="./index.html">HOME</a>
+        <a href="./works.html">DIGITAL WORKS</a>
+        
+        <!-- Right-aligned links -->
+        <div class="topnav-right">
+            <a href="./photo.html">PHOTOGRAPHIC WORKS</a>
+          <a href="./cv.html">CV</a>
+        </div>   
+      </div>
+      <img src="./Design/logoContact.png">
+      <div id="main">
+      <div id="popupForm">
+      <form id="contactForm" method="POST" action="sendmail.php">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form></div></div>
+</body>
+</html>

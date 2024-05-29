@@ -1,0 +1,114 @@
+img { width: 100%; height: 100%; display: block }
+
+ 
+ body,html {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Garamond'
+}
+
+h1 {
+    text-align: center;
+  }
+  
+  .topnav {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #5d5d5d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .topnav a:hover {
+    color: rgb(211, 183, 104);
+  }
+
+  
+  .topnav a.active {
+    color: rgb(40, 39, 39);
+  }
+  
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+    
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+    .topnav.responsive a {
+      float: center;
+      display: block;
+      text-align: left;
+    } 
+    /* ========== MAIN CONTENT CONTAINERS ========= */
+/* Desktops */
+@media (min-width:768px) { .container-block { padding: 4% 8% } }
+
+/* Mobiles */
+@media (max-width:767px) { .container-block { padding: 11% 8% } }
+
+
+/* ========== FLEXBOX PARENT AND CHILD COLUMN ELEMENTS ========= */
+
+/* Flexbox parent container */
+.container-flexbox {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+ }
+
+/* Desktops: flexbox child columns */
+@media (min-width:768px) {
+    .item-col-3 { width: 29% }
+}
+
+/* Mobiles: flexbox child columns */
+@media (max-width: 767px) {
+    .item-col-3 { width: 100% }
+    /* Vertical spacing under child columns */
+    .item-col-3 { margin-bottom: 32px }
+    /* No vertical spacing under last child column */
+    .item-col-3:last-child  { margin-bottom: 0 } 
+}
+
+/* Desktops: inner padding for child columns */
+@media (min-width: 768px) {
+    .item-col-3.item-col-padding { padding: 1.8% 2% 2.2% 2% }
+}
+
+/* Mobiles: inner padding for child columns  */
+@media (max-width: 767px) {
+    .item-col-3.item-col-padding { padding: 6.5% 7% 7% 7% }
+}
+
+
+/* No vertical spacing under final item inside child columns */
+.item-col-3 *:last-child { margin-bottom: 0 }
+
+/* Images inside child columns */
+.item-col-3 img { margin-bottom: 20px }
