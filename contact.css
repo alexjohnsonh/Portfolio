@@ -27,11 +27,12 @@ img {
     .topnav {
       position: relative;
       overflow: hidden;
+      background-color: rgb(255, 255, 255);
     }
     
     .topnav a {
       float: left;
-      color: #5d5d5d;
+      color: #8d8d8d;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
@@ -44,7 +45,7 @@ img {
   
     
     .topnav a.active {
-      color: rgb(4, 4, 4);
+      color: rgb(0, 0, 0);
     }
     
     .topnav-centered a {
@@ -90,7 +91,7 @@ img {
         text-align: right;
       }
       li a {
-        color: #cecece;
+        color: #8d8d8d;
         padding: 8px 16px;
         text-decoration: none;
         font-style: oblique;

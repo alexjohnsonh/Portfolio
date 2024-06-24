@@ -17,6 +17,7 @@ img {
  
  body,html {
     background-color: rgb(255, 255, 255);
+    color: #000000;
   margin: 0;
   width: 100vw;
   height: 100vh;
@@ -30,7 +31,7 @@ img {
   
   .topnav a {
     float: left;
-    color: #5d5d5d;
+    color: #8d8d8d;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -43,7 +44,7 @@ img {
 
   
   .topnav a.active {
-    color: rgb(4, 4, 4);
+    color: rgb(0, 0, 0);
   }
   
   .topnav-centered a {
@@ -89,14 +90,14 @@ img {
       text-align: right;
     }
     li a {
-      color: #cecece;
+      color: #8d8d8d;
       padding: 8px 16px;
       text-decoration: none;
       font-style: oblique;
     }
     
     li a.active {
-      color: rgb(5, 5, 5);
+      color: rgb(0, 0, 0);
       text-decoration: underline;
       font-size: large;
     }
@@ -145,7 +146,7 @@ img {
       }
     }
     .ul-divider {
-      border-left: 1px solid black;
+      border-left: 1px solid rgb(0, 0, 0);
       height: 14%;
       position: absolute;
       left: 25%; /* Adjust this value as needed */
