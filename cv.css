@@ -41,7 +41,7 @@ img {
     }
     
     .topnav a:hover {
-      color: rgb(0, 0, 0);
+      color: rgb(16, 131, 255);
     }
   
     
@@ -105,7 +105,7 @@ img {
       }
       
       li a:hover:not(.active) {
-        color: #000000;
+        color: rgb(16, 131, 255);
       }
       .newspaper {
         column-count: 3;
