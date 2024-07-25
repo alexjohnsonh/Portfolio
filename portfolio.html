@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="branding.css">
+</head>
+<body>
+    <div class="topnav">
+        <div class="topnav-centered">
+            <a href="./works.html" class="active">DIGITAL WORKS</a>
+        </div>
+        <a href="./index.html">HOME</a>
+        <a href="./photo.html">PHOTOGRAPHIC WORKS</a>
+        <div class="topnav-right">
+            <a href="./cv.html">CV</a>
+            <a href="./contact.html">CONTACT</a>
+        </div>
+    </div>
+
+    <div class="ul-divider"></div>
+
+    <ul>
+        <li><a href="./works.html">Motion Graphics</a></li>
+        <li><a href="./branding1.html">Branding I</a></li>
+        <li><a href="./branding.html">Branding II</a></li>
+        <li><a href="./thinking.html">Design Thinking</a></li>
+        <li><a href="./blender.html">Blender</a></li>
+        <li><a href="./portfolio.html" class="active">Website</a></li>
+    </ul>
+
+    <div style="margin-left:25%;padding:0px 16px;height:auto;margin-top: 60px;">
+        <h2>Portfolio</h2>
+        <p><strong>2024</strong></p>
+
+        <div class="newspaper">
+            I built this portfolio using GitHub, which let me control every part of the website. For the bubbles on the homepage, I used a tool called Three.js. This adds a fun, moving element that catches the eye right away.
+            To make sure the website works well for everyone, I asked many people to test it and give me their thoughts. I made changes based on what they said, which helped make the site easier to use and more enjoyable.
+            While working on this project, I also learned how to use Artificial Intelligence (AI) as a helper. AI tools helped me find and fix problems in my code more quickly. They also gave me new ideas for designing the site.
+        </div>
+
+        <div class="image-grid">
+            <div class="project large">
+                <img src="./Design/portfolioHome.png" class="image-item large">
+                <div class="overlay">
+                    <div class="overlay-inner">
+                        X
+                        <div class="hdImgs">
+                            <img src="./Design/portfolioHome.png" class="squareImg">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">View</div>
+            </div>
+            <div class="project">
+                <img src="./Design/portfolio presentation2.png" class="image-item medium">
+                <div class="overlay">
+                    <div class="overlay-inner">
+                        X
+                        <div class="hdImgs">
+                            <img src="./Design/portfolio presentation2.png" class="squareImg">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">View</div>
+            </div>
+            <div class="project">
+                <img src="./Design/portfolio presentation4.png" class="image-item">
+                <div class="overlay">
+                    <div class="overlay-inner">
+                        X
+                        <div class="hdImgs">
+                            <img src="./Design/portfolio presentation4.png" class="squareImg">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">View</div>
+            </div>
+            <div class="project medium">
+                <img src="./Design/portfolio presentation3.png" class="image-item">
+                <div class="overlay">
+                    <div class="overlay-inner">
+                        X
+                        <div class="hdImgs">
+                            <img src="./Design/portfolio presentation3.png" class="squareImg">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">View</div>
+            </div>
+            <div class="project">
+              <img src="./Design/portfolio presentation5.png" class="image-item">
+              <div class="overlay">
+                  <div class="overlay-inner">
+                      X
+                      <div class="hdImgs">
+                          <img src="./Design/portfolio presentation5.png" class="squareImg">
+                      </div>
+                  </div>
+              </div>
+              <div class="btn-box">View</div>
+          </div>
+         
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const projects = document.querySelectorAll('.project');
+            
+            projects.forEach(project => {
+                const btn = project.querySelector('.btn-box');
+                const overlay = project.querySelector('.overlay');
+                const closeBtn = overlay.querySelector('.overlay-inner');
+
+                btn.addEventListener('click', () => {
+                    overlay.style.display = 'flex';
+                });
+
+                closeBtn.addEventListener('click', () => {
+                    overlay.style.display = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

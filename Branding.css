@@ -97,8 +97,8 @@ body, html {
 
 ul {
   list-style-type: none;
-  margin-left: 0px;
-  margin-top: 110px;
+  margin-left: -1px;
+  margin-top: 107px;
   padding: 1px;
   width: 25%;
   height: 100vh;
@@ -111,7 +111,7 @@ ul {
 li a {
   display: block;
   color: #8d8d8d;
-  padding: 8px 16px;
+  padding: 9px 16px;
   text-decoration: none;
   font-style: oblique;
 }
@@ -128,7 +128,7 @@ li a:hover:not(.active) {
 
 .ul-divider {
   border-left: 1px solid rgb(0, 0, 0);
-  height: 17%;
+  height: 21%;
   position: absolute;
   left: 25%;
   top: 120px;

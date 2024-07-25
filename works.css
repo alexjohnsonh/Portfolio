@@ -146,7 +146,7 @@ img {
       }
       .ul-divider {
         border-left: 1px solid rgb(0, 0, 0);
-        height: 17%;
+        height: 21%;
         position: absolute;
         left: 25%; /* Adjust this value as needed */
         top: 120px;
