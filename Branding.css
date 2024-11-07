@@ -138,6 +138,8 @@ li a:hover:not(.active) {
   column-count: 3;
   max-width: 80%;
   margin-right: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: small;
 }
 
 .image-grid {
