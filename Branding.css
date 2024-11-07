@@ -128,7 +128,7 @@ li a:hover:not(.active) {
 
 .ul-divider {
   border-left: 1px solid rgb(0, 0, 0);
-  height: 25%;
+  height: 22%;
   position: absolute;
   left: 25%;
   top: 120px;
